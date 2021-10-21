@@ -76,7 +76,10 @@ int main()
         c = _getch();
     }
 }
-
+void cls()
+{
+    system("@cls || clear");
+}
 
 void drawHangman()
 {
@@ -112,12 +115,15 @@ void display()
     cout << "\tPress '.' to exit." << endl;
     cout << "\tTries left: " << (maxTries - tries) << endl << endl;
     cout << "\t\t    ";
-
+    
     for (int i = 0; i < wordlist[sel].length(); i++)
     {
         f = input.find(wordlist[sel][i]);
-        
-    }
+        if (f == string::npos)
+            cout << "_" << " ";
+        else
+            cout << wordlist[sel][i] << " ";
+        }
 
     cout << endl;
 }
