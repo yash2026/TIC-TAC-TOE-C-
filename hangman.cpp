@@ -93,7 +93,7 @@ void drawHangman()
         case 8:  cout << "\t\t\t    ---     |" << endl;
         case 7:  cout << "\t\t\t   |   |    |" << endl;
         case 6:  cout << "\t\t\t    ---     |" << endl;
-        case 5:  cout << "\t\t\t ----|----  |" << endl;
+  
         case 4:  cout << "\t\t\t     |      |" << endl;
         case 3:  cout << "\t\t\t     |      |" << endl;
         case 2:  cout << "\t\t\t    ---     |" << endl;
