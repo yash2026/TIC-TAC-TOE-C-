@@ -98,6 +98,7 @@ void drawHangman()
         case 3:  cout << "\t\t\t     |      |" << endl;
         case 2:  cout << "\t\t\t    ---     |" << endl;
         case 1:  cout << "\t\t\t   /   \\    |" << endl;
+                 cout << "\t\t\t            |" <<endl;
                  cout << "\t\t\t____________|" << endl;
     }
     cout << endl << endl;
@@ -134,6 +135,7 @@ bool checkIfWon()
         if (input.find(wordlist[sel][i]) == string::npos)
             return false;
         else{
+            return true;
         }
     }
 
